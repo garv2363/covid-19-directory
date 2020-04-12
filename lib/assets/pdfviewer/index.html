@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="minimal.css?2060408"/>
+    <script type="text/javascript" src="compatibility.js"></script>
+    <!--  horrible hack needs fix-->
+    <script type="text/javascript" src="pdffile.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<div class="pdf_head" id="first_head">
+    </div>
+    <div class="pdf_head" style="z-index:999"><div class="clearfix">
+        <div><button id="prev" onclick="goPrevious()" class="button">Prev</button></div>
+        <div><span>Page: <span id="page_num"></span> / <span id="page_count"></span></span></div>
+        <div><button id="next" onclick="$('.pdf_body').fadeOut(200,function(){goNext(); setTimeout(function(){$('.pdf_body').fadeIn(200)}, 1000 )})" class="button">Next</button></div>
+    </div></div>
+
+    <div class="pdf_body clearfix" id="pdf_source">
+        <canvas id="the-canvas"></canvas>
+
+    </div>
+
+<script type="text/javascript" src="hammer.js"></script>
+<script type="text/javascript" src="hammer-time.js"></script>
+<!-- Use latest PDF.js build from Github -->
+<script type="text/javascript" src="pdf.js"></script>
+<script type="text/javascript" src="zoomer.js"></script>
+<script type="text/javascript" src="customview.js"></script>
+</body>
+</html>

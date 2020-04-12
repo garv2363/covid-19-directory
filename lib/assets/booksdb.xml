@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Config>
+    <Menu>
+        <Entry boolean="NO">
+            <Name>Genre</Name>
+            <Tag>Category</Tag>
+            <Thumbnail>
+                http://ibuilder.solovathost.com/media/wdefaults/catalog/images/categories@2x.png
+            </Thumbnail>
+            <Thumbnail_res></Thumbnail_res>
+            <Menu multiselect="1">
+                <Entry selected="0">
+                    <Name><![CDATA[Action and Adventure]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Art & Photography]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Biography & Memories]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Business & Finance]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Celebrity & Pop Culture]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Children's]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Cookbooks]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Cultural/Social Issues]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Fantasy]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Food & Lifestyle]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Gardening]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Graphic Novels]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[History & Military]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Horror]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Home Decorating & Design]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[How To]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Humour & Gift Books]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Journalism]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Medical, Health & Fitness]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Music, Film & Entertainment]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Mystery]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Nature & Ecology]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Offbeat or Quirky]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Parenting]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Pets]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Picture Books]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Psychology]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Religion & Spirituality]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Romance]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Science Fiction]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Short Story Collections]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Thrillers and Suspense]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Travel]]></Name>
+                </Entry>
+                <Entry selected="0">
+                    <Name><![CDATA[Western]]></Name>
+                </Entry>
+            </Menu>
+        </Entry>
+        <Entry checkable="1">
+            <Name>Recommended</Name>
+            <Tag>Recommended</Tag>
+            <Thumbnail>
+                http://ibuilder.solovathost.com/media/wdefaults/catalog/images/featured@2x.png
+            </Thumbnail>
+            <Thumbnail_res></Thumbnail_res>
+        </Entry>
+        <Entry checkable="1">
+            <Name>New Releases</Name>
+            <Tag>Releases</Tag>
+            <Thumbnail>http://ibuilder.solovathost.com/media/wdefaults/catalog/images/new@2x.png
+            </Thumbnail>
+            <Thumbnail_res></Thumbnail_res>
+        </Entry>
+        <Entry checkable="1">
+            <Name>Bestsellers</Name>
+            <Tag>Bestsellers</Tag>
+            <Thumbnail>
+                http://ibuilder.solovathost.com/media/wdefaults/catalog/images/bestsellers@2x.png
+            </Thumbnail>
+            <Thumbnail_res></Thumbnail_res>
+        </Entry>
+    </Menu>
+    <UIAdapter>
+        <TitleTag>Title</TitleTag>
+        <DescriptionTag>Author</DescriptionTag>
+        <ThumbnailTag type="url">Thumbnail</ThumbnailTag>
+        <ThumbnailTag type="res">Thumbnail_res</ThumbnailTag>
+        <Template>
+            <![CDATA[<!-- <HTML>
+<div>__[[((Title))]]__</div>
+<div>__[[((Description))]]__</div>
+<div>__[[((Author))]]__</div>
+<div>__[[((AuthorDescription))]]__</div>
+<div>__[[((ThumbnailAuthor))]]__|__[[((ThumbnailAuthor_res))]]__</div>
+<div>__[[((Thumbnail))]]__|__[[((Thumbnail_res))]]__</div>
+<div>__[[((Url))]]__</div>
+<div>__[[((Price))]]__</div>
+<div>__[[((Category))]]__</div>
+</HTML>
+-->
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 14px;
+            font-family: Arial;
+            color: #424242;
+        }
+        .column1{
+            width: 100px; float: left
+        }
+        .column2{
+            padding-left: 110px
+        }
+        .bookTitle{
+            font-weight: bold
+        }
+        .bookAuthor{
+            display: block;
+            margin-top: 10px;
+            color: #424242;
+            padding: 5px 10px;
+            max-width: 120px;
+            background: -moz-linear-gradient(
+                top,
+                #c0beae 0%,
+                #b5b5b5);
+            background: -webkit-gradient(
+                linear, left top, left bottom,
+                from(#c0beae),
+                to(#b5b5b5));
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #949494;
+            -moz-box-shadow:
+                0px 0px 0px rgba(000,000,000,0),
+                inset 0px 0px 2px rgba(255,255,255,0);
+            -webkit-box-shadow:
+                0px 0px 0px rgba(000,000,000,0),
+                inset 0px 0px 2px rgba(255,255,255,0);
+            box-shadow:
+                0px 0px 0px rgba(000,000,000,0),
+                inset 0px 0px 2px rgba(255,255,255,0);
+            text-shadow:
+                0px -1px 0px rgba(000,000,000,0),
+                0px 1px 0px rgba(255,255,255,0);
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .buy{
+            margin-top: 10px;
+        }
+        .bookPrice{
+            display: inline-block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .buyButton{
+            text-decoration: none;
+            float: right;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 4px 25px;
+            background: -moz-linear-gradient(
+                top,
+                #ff7226 0%,
+                #dc4600);
+            background: -webkit-gradient(
+                linear, left top, left bottom,
+                from(#ff7226),
+                to(#dc4600));
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 0px solid #000000;
+            -moz-box-shadow:
+                0px 1px 3px rgba(000,000,000,0),
+                inset 0px 0px 5px rgba(161,142,016,0);
+            -webkit-box-shadow:
+                0px 1px 3px rgba(000,000,000,0),
+                inset 0px 0px 5px rgba(161,142,016,0);
+            box-shadow:
+                0px 1px 3px rgba(000,000,000,0),
+                inset 0px 0px 5px rgba(161,142,016,0);
+            text-shadow:
+                0px -1px 3px rgba(255,255,255,0),
+                0px 1px 0px rgba(255,255,255,0);
+            cursor: pointer;
+        }
+        .bookDescription{
+            clear: both;
+        }
+        .bookDescription span{
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .authorPopup{
+            background-color: #ffffff;
+            -webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    2px 2px 5px rgba(50, 50, 50, 0.75);
+            box-shadow:         2px 2px 5px rgba(50, 50, 50, 0.75);
+            display: none;
+            position: absolute;
+            top:0;
+            left: 0;
+            padding: 20px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin: 0 20px;
+        }
+        .authorName{
+            margin-left: 110px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .authorDescription{
+            margin-top: 10px;
+
+        }
+        .authorDescription span{
+            font-weight: bold;
+        }
+
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #eeecd8">
+<div class="bookPage" style="padding: 10px">
+    <div class="column1">
+        <img src="__[[((Thumbnail))]]__|__[[((Thumbnail_res))]]__" width="100">
+    </div>
+    <div class="column2">
+        <div class="bookTitle">__[[((Title))]]__</div>
+        <a class="bookAuthor" href="javascript:void(0)">__[[((Author))]]__</a>
+        <div class="buy">
+            <div class="bookPrice">$__[[((Price))]]__</div>
+            <a class="buyButton" target="_blank" href="__[[((Url))]]__">Buy</a>
+        </div>
+    </div>
+
+    <div class="bookDescription">
+        <span>Description:</span>
+        <p>__[[((Description))]]__</p>
+    </div>
+</div>
+<div class="authorPopup">
+    <a class="close">×</a>
+    <div class="column1" style="margin-right: 10px">
+        <img src="__[[((ThumbnailAuthor))]]__|__[[((ThumbnailAuthor_res))]]__" width="100">
+    </div>
+    <div class="column2" style="padding-left: 0">
+        <div class="authorName">__[[((Author))]]__</div>
+        <div class="authorDescription">
+            <span>Biography:</span>
+            <p>__[[((AuthorDescription))]]__</p>
+        </div>
+    </div>
+</div>
+<style>
+    .close {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        font-size: 300%;
+        line-height: 18px;
+        color: #000000;
+        text-shadow: 0 1px 0 #ffffff;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+        text-decoration: none;
+    }
+    .close:hover {
+        color: #000000;
+        text-decoration: none;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+        cursor: pointer;
+    }
+</style>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var buyButton=$('.buyButton');
+        var bookPrice=$('.bookPrice');
+        if (bookPrice.text()=='$0' || bookPrice.text()==''){
+            bookPrice.hide();
+        }
+        if (!buyButton.attr('href')){
+            $(buyButton).hide();
+        }
+        var authorDesc=$('.authorDescription');
+        if (!authorDesc.text()){
+            $(authorDesc).hide();
+        }
+    })
+    $('.authorPopup').click(function(){
+        $('.authorPopup').hide();
+    })
+    $('.bookAuthor').click(function(){
+        var authorPopup=$('.authorPopup');
+        var windowHeight=$(window.top).height();
+        authorPopup.css({top:((windowHeight-authorPopup.height())/2),'min-width':$('body').width()-80});
+        authorPopup.show();
+    })
+
+</script>
+
+</html>]]>
+        </Template>
+    </UIAdapter>
+    <Content lastUpdate="1383716516">
+        <Entity valid="yes">
+            <Id>36</Id>
+            <Title><![CDATA[Book title]]></Title>
+            <Description><![CDATA[Book "Desctipyion"]]></Description>
+            <Author><![CDATA[Author title]]></Author>
+            <AuthorDescription><![CDATA[BIO]]></AuthorDescription>
+            <ThumbnailAuthor>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f8f55238a.jpg]]></ThumbnailAuthor>
+            <ThumbnailAuthor_res><![CDATA[]]></ThumbnailAuthor_res>
+            <Thumbnail>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f8f5477b0.jpg]]></Thumbnail>
+            <Thumbnail_res><![CDATA[]]></Thumbnail_res>
+            <Url><![CDATA[http://url.com]]></Url>
+            <Price><![CDATA[1]]></Price>
+            <Category><![CDATA[Action and Adventure, Art & Photography]]></Category>
+            <Recommended>YES</Recommended>
+            <Releases>YES</Releases>
+            <Bestsellers>NO</Bestsellers>
+        </Entity>
+        <Entity valid="yes">
+            <Id>37</Id>
+            <Title><![CDATA[BookTitle]]></Title>
+            <Description><![CDATA[Book "Description"]]></Description>
+            <Author><![CDATA[AuthorName]]></Author>
+            <AuthorDescription><![CDATA[EnterBio]]></AuthorDescription>
+            <ThumbnailAuthor>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f94590964.jpg]]></ThumbnailAuthor>
+            <ThumbnailAuthor_res><![CDATA[]]></ThumbnailAuthor_res>
+            <Thumbnail>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f9458849c.jpg]]></Thumbnail>
+            <Thumbnail_res><![CDATA[]]></Thumbnail_res>
+            <Url><![CDATA[http://ir.co]]></Url>
+            <Price><![CDATA[0]]></Price>
+            <Category><![CDATA[Action and Adventure, Business & Finance]]></Category>
+            <Recommended>NO</Recommended>
+            <Releases>NO</Releases>
+            <Bestsellers>YES</Bestsellers>
+        </Entity>
+        <Entity valid="yes">
+            <Id>38</Id>
+            <Title><![CDATA[Boooool]]></Title>
+            <Description><![CDATA[Desc"RIPTION"]]></Description>
+            <Author><![CDATA[NNNNName]]></Author>
+            <AuthorDescription><![CDATA[BIODDDD]]></AuthorDescription>
+            <ThumbnailAuthor>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f972df310.jpg]]></ThumbnailAuthor>
+            <ThumbnailAuthor_res><![CDATA[]]></ThumbnailAuthor_res>
+            <Thumbnail>
+                <![CDATA[http://ibuilder.solovathost.com/assets/data/00002/2361/1158/catalogbooks/5278f972d3b7f.jpg]]></Thumbnail>
+            <Thumbnail_res><![CDATA[]]></Thumbnail_res>
+            <Url><![CDATA[]]></Url>
+            <Price><![CDATA[12]]></Price>
+            <Category><![CDATA[Business & Finance, Celebrity & Pop Culture]]></Category>
+            <Recommended>NO</Recommended>
+            <Releases>YES</Releases>
+            <Bestsellers>NO</Bestsellers>
+        </Entity>
+    </Content>
+</Config>
